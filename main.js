@@ -80,7 +80,7 @@ function uncover(id) {
                 showSuccesses.innerHTML = `Aciertos: ${successes} 😎😎😎😎 `
                 showMovements.innerHTML = `Te tomó ${movements} movimientos `;
                 mostrarTiempo.innerHTML = `Felicidades completaste el reto en ${timerInicial - timer} segundos`;
-                alert('Felicidades has conseguido terminar el juego ojala te la chupen 😁👌');
+                alert('Felicidades has conseguido terminar el juego 😁👌');
             }
         }else{
             //temporarily display the values and recap
