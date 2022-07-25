@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,300;8..144,400;8..144,700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('assets/patron.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Roboto Serif', serif;
+    color: white;
+    height: 100vh;
+}
+
+.container{
+    height: 100vh;
+    background-color: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 0.596) 0%, rgba(107,9,121,0.5578606442577031) 35%, rgba(0, 213, 255, 0.719) 100%);
+    padding-top: 0.1px;
+}
+
+.container__div{
+    width: 730px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.section1{
+    min-width: 300px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.637);
+    border-radius: 8px;
+    
+}
+
+.section1__title{
+    padding-bottom: 10px;
+}
+
+button{
+    width: 100px;
+    height: 100px;
+    font-size: 40px;
+    color: #fff;
+    font-weight: bold;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgba(212, 209, 252, 0.555);
+    
+
+}
+
+.section2{
+    background-color: rgba(255, 255, 255, 0.637);
+    width: 300px;
+    height: 400px;
+    border-radius: 0 8px 8px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.estadisticas{
+    font-size: 1.2rem;
+    border: 1px solid #fff;
+    height: 105px;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 8px;
+    padding: 8px 20px;
+}
+
+footer{
+    font-size: .8rem;
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+    font-weight: 700;
+    color: crimson;
+}
+
+@media (max-width: 750px){
+    body {
+      overflow: hidden;  
+    }
+    .container{
+        position: absolute;
+        height: 100%;  
+        width: 100%;    
+    }
+    .container__div{
+        margin: 10px auto;
+        width: 350px;
+        padding-right: 0.1;
+        flex-direction: column;        
+    }
+   
+    .section1__title{
+        font-size: 1.2rem;
+    }
+
+    button{
+        width: 70px;
+        height: 70px;
+        font-size: 20px;
+    }
+
+    
+
+    .section2{
+        width: 200px;
+        height: 200px;
+        display: flex;
+        border-radius: 0 0 8px 8px;
+        padding: 10px;
+        justify-content: flex-start
+    }
+
+    .estadisticas{
+        font-size: 0.7rem;
+        margin-bottom: 5px;
+        height: 50px;
+    }
+
+    footer{
+        font-size: .7rem;
+    }
+}
